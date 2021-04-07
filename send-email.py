@@ -4,6 +4,8 @@ ses_client = boto3.client('ses')
 db_resource = boto3.resource('dynamodb')
 table = db_resource.Table('message_notification')
 
+
+### new comment
 def notifyuser(event, context):
     event = json.loads(event["Records"][0]['Sns']['Message'])
     recipient = event['recipient']
