@@ -26,4 +26,4 @@ jobs:
         run: |
           aws lambda update-function-code \
             --function-name  send-email \
-            --zip-file send-email.zip
+            --zip-file fileb://send-email.zip
